@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    <div class="welcome">
+      <img src="img/logo.svg" alt="">
+    </div>
+
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt=""></a> 
+    </div>
+
+    <!-- nav -->
+    <div class="menu-overlay">
+      <div class="block b1"></div>
+      <div class="block b2"></div>
+      <div class="block b3"></div>
+      <div class="block b4"></div>
+    </div>
+
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="siapa.html">About</a></li>
+      <li><a href="404.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="tutup">
+    <i class="fas fa-times"></i>
+  </div>
+
+  <div class="buka">
+     <i class="fas fa-bars"></i>
+  </div>
+<!-- akhir nav -->
+  
+  
+
+<div class="home">
+  <ul>
+    <li>
+      <a href="about.html">
+          <div class="blok blok1"></div>
+          <a href=""><h3 class="judul judul1">Tanah Lot</h3></a> 
+          <a class="link" href="#"><i class="fas fa-angle-right"></i></a>  
+      </a>      
+    </li>
+
+    <li>
+      <a href="about.html">
+          <div class="blok blok2"></div>
+          <a href=""><h3 class="judul">Tirta Gangga</h3></a> 
+          <a class="link" href="#"><i class="fas fa-angle-right"></i></a>
+      </a>      
+    </li>
+
+    <li>
+      <a href="about.html">
+          <div class="blok blok3"></div>
+          <a href="about.html"><h3 class="judul judul1">Water Slide</h3></a> 
+          <a class="link" href="about.html"><i class="fas fa-angle-right"></i></a>
+      </a>      
+    </li>
+
+    <li>
+      <a href="about.html">
+        <div class="blok blok4"></div>
+          <a href=""><h3 class="judul panjang">Edelweis Garden</h3></a> 
+          <a class="link" href="#"><i class="fas fa-angle-right"></i></a>
+      </a>        
+    </li>
+  </ul>
+</div>   
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('.buka').click(function(){
+          $('.block').addClass('active');  
+          $('.buka').css('display', 'none');
+          $('.menu').addClass('active');
+      });
+
+      $('.tutup').click(function(){
+          $('.block').removeClass('active');  
+          $('.buka').css('display', 'block');
+          $('.menu').removeClass('active');
+      });
+  });
+</script>
+  </body>
+</html>

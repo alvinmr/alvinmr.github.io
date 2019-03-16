@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+
+     <!-- fontawesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt=""></a> 
+    </div>
+
+    <!-- nav -->
+    <div class="menu-overlay">
+            <div class="block b1"></div>
+            <div class="block b2"></div>
+            <div class="block b3"></div>
+            <div class="block b4"></div>
+        </div>
+      
+        <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="siapa.html">About</a></li>
+              <li><a href="404.html">Contact</a></li>
+            </ul>
+          </div>
+      
+        <div class="tutup">
+          <i class="fas fa-times"></i>
+        </div>
+      
+        <div class="buka">
+           <i class="fas fa-grip-lines"></i>
+        </div>
+      <!-- akhir nav -->
+  <div class="main">
+    <ul>
+        <li>
+            <div class="judul1">
+                <h2>Water Slide</h2>
+                <span>Ubud, Bali</span>
+            </div>
+            
+        </li>
+        
+        <li>
+          <div class="about">
+              <h1>About</h1>
+              <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, corporis laboriosam maiores est ullam fugit laudantium optio nobis, adipisci eligendi, tempora dignissimos delectus numquam odit eum ducimus facere ut dolores. Pariatur earum incidunt officia aliquid mollitia laboriosam suscipit ullam minima, blanditiis illo neque in culpa nostrum, numquam animi! Impedit corporis culpa magnam similique odit accusantium accusamus expedita veritatis architecto nihil, voluptates, quisquam reiciendis officiis maxime voluptatem nam dolor facere nobis, consequatur asperiores incidunt alias necessitatibus dignissimos. Ut voluptatibus perferendis, optio suscipit beatae, nihil provident consequuntur debitis repellendus corporis fugit culpa cum temporibus accusamus ratione explicabo asperiores reiciendis quis natus dolorem?
+              </p>
+          </div>
+            
+        </li>
+
+        <li></li>
+    </ul>
+  </div>      
+    
+
+    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.buka').click(function(){
+            $('.block').addClass('active');  
+            $('.buka').css('display', 'none');
+            $('.menu').addClass('active');
+        });
+
+        $('.tutup').click(function(){
+            $('.block').removeClass('active');  
+            $('.buka').css('display', 'block');
+            $('.menu').removeClass('active');
+        });
+    });
+</script>
+</body>
+</html>

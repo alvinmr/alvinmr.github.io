@@ -1,0 +1,67 @@
+.judul-wrap{
+    transform: rotate(-90deg);
+    position: fixed;    
+    top: 55%;
+    left: -5%;
+    opacity: 0;
+    animation: left .8s ease-in forwards;
+}
+
+.judul-spot{
+    font-size: 82px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.judul-spot::before{
+    content: 'our spot';
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    width: 500px;
+    color: #00000036;
+    z-index: -1;
+}
+
+.gallery{
+    margin-top: 150px;
+    animation: fadein 0.8s ease-in forwards;
+}
+
+.fit-image{
+    margin-top: 15px;
+}
+
+.row{
+    margin-left: 1px;
+    
+}
+
+.fit-image:hover{
+    transition: .5s;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.356);
+}
+
+@keyframes fadein{
+    0%{    
+        margin-top: 180px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 150px;
+        opacity: 1;
+    }
+}
+
+
+@keyframes left{
+    0%{
+        left: -10%;
+        opacity: 0;
+    }
+
+    100%{
+        left: -5%;
+        opacity: 1;
+    }
+}
